@@ -1,0 +1,60 @@
+{
+  "name": "RedTeam",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "ed4b587a-eac1-4bde-8dd5-bc34f57a0507",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "url": "http://host.docker.internal:8001/run",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ],
+      "id": "dc471ebe-a361-4fb1-83d2-82bd76302bcb",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "b7276f6a-e335-4500-8820-56723ae984cf",
+  "meta": {
+    "instanceId": "3d6526ccb4627aeb3c5d8ae7d6908ab1476a8eb685bafbdd38d8f08ca56bbb0b"
+  },
+  "id": "HVV2mTFNNIS9uq5B",
+  "tags": []
+}
