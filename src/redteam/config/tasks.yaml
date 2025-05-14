@@ -1,0 +1,70 @@
+# 1. Tâche de reconnaissance OSINT
+osint_recon_task:
+  description: >
+    Conduct comprehensive OSINT research on Innovatech Inc. (fictional IoT solutions company).
+    Focus on: corporate structure, key employees, technologies used, recent news.
+    Assume the company has 500+ employees with R&D centers in Paris and Singapore.
+  expected_output: >
+    A detailed dossier containing:
+    - 5 key executives with LinkedIn-like profiles
+    - 3 valuable R&D project hints
+    - Company's tech stack analysis
+    - 3 potential phishing entry points
+  agent: osint_analyst
+
+# 2. Tâche d'identification des cibles
+target_selection_task:
+  description: >
+    Analyze OSINT data to select optimal phishing targets at Innovatech.
+    Prioritize: HR department, IT admins, financial controllers.
+    Create psychological profiles for each target based on digital footprints.
+  expected_output: >
+    A prioritized list of 5 targets with:
+    - Name/position
+    - 3 personalization hooks (interests, behaviors)
+    - Suggested attack vector for each
+  agent: osint_analyst
+  dependencies: [osint_recon_task]
+
+# 3. Tâche d'ingénierie sociale
+phishing_crafting_task:
+  description: >
+    Create 3 hyper-personalized phishing email variants per selected target.
+    Use: urgent invoice theme for finance, security alert for IT, conference invitation for R&D.
+    Incorporate current IoT industry trends (Q2 2024).
+  expected_output: >
+    3 polished email templates per target containing:
+    - Convincing sender persona
+    - Contextualized pretext
+    - Natural language urgency triggers
+    - AI-generated "human-like" errors
+  agent: social_engineer
+  dependencies: [target_selection_task]
+
+# 4. Tâche de conception de payload (simulé)
+malware_concept_task:
+  description: >
+    Design theoretical AI-powered evasion techniques for simulated payload.
+    Include: polymorphic behavior, traffic masking, environment-aware adaptation.
+    NO ACTUAL CODE - only behavioral descriptions.
+  expected_output: >
+    A technical brief describing:
+    - 3 evasion techniques
+    - Trigger conditions
+    - Simulated AI adaptation process
+    - Suggested command-and-control channels
+  agent: malware_designer
+
+# 5. Tâche d'exfiltration (simulé)
+data_exfiltration_task:
+  description: >
+    Plan simulated exfiltration of "IoT-Project-Aurora" designs from compromised systems.
+    Consider: data valuation, stealth timing (timezones), size obfuscation.
+    Assume initial beachhead established via phishing.
+  expected_output: >
+    An exfiltration playbook containing:
+    - 3-phase extraction timeline
+    - Data prioritization matrix
+    - 2 backup exfiltration methods
+    - Simulated AI traffic masking
+  agent: exfiltration_planner

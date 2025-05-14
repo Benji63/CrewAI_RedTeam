@@ -1,0 +1,23 @@
+[project]
+name = "redteam"
+version = "0.1.0"
+description = "redteam using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.119.0,<1.0.0"
+]
+
+[project.scripts]
+redteam = "redteam.main:run"
+run_crew = "redteam.main:run"
+train = "redteam.main:train"
+replay = "redteam.main:replay"
+test = "redteam.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
