@@ -1,12 +1,12 @@
 Main.py -> execution output
-+--------------------------------------------------------------------------- Crew Execution Started ---------------------------------------------------------------------------+
-|                                                                                                                                                                              |
-|  Crew Execution Started                                                                                                                                                      |
-|  Name: crew                                                                                                                                                                  |
-|  ID: 7a18e1ae-b59c-4ad8-98a5-89ab4dda6607                                                                                                                                    |
-|                                                                                                                                                                              |
-|                                                                                                                                                                              |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Crew Execution Started 
+
+ Crew Execution Started                                                                                      Name:
+ 
+ Crew                                                                                                                                                                  
+ 
+ |  ID: 7a18e1ae-b59c-4ad8-98a5-89ab4dda6607                                                       
+ 
 
 [EventBus Error] Handler 'on_task_started' failed for event 'TaskStartedEvent': 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
  [1m [95m# Agent: [00m  [1m [92mOSINT Intelligence Analyst specializing in corporate reconnaissance [00m
